@@ -1,0 +1,720 @@
+/* styles.css */
+
+
+
+/*
+
+
+@font-face {
+    font-family: 'Ahronbdgg';
+    src: url('ahronbd.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Ahronbdgg', sans-serif;
+    font-size: 14px;
+}
+
+*/
+
+/* Link to Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Set Poppins as the default font */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+label {
+  font-weight: 700;
+}
+
+/* Font weights for specific elements */
+h1, h2, h3 {
+  font-weight: 950; /* Bold for headers */
+}
+
+h4, h5, h6 {
+  font-weight: 900; /* Bold for headers */
+}
+
+p {
+  font-weight: 700; /* Regular weight for paragraph text */
+}
+
+.btn {
+  font-weight: 700; /* Medium weight for buttons */
+}
+
+.form-control{
+  font-weight: 700
+}
+
+element.style {
+  font-weight: 700
+}
+
+
+
+
+.container-fluid {
+        padding: 0;
+}
+
+/*
+
+.js-plotly-plot .plotly .main-svg, .js-plotly-plot .plotly text {
+        font-family: 'Ahronbdgg' !important;
+}
+
+*/
+
+
+
+
+
+
+
+.navbar-default {
+  display: none; /* Hides the entire navbar area */
+}
+
+.tab-content {
+    margin-top: 0px; /* Removes any margin above tab content */
+}
+
+.nav.nav-underline {
+  background-color: #14499F;  /* Background color of the navigation bar */
+  padding: 10px 20px;         /* Adjust padding for better appearance */
+  display: flex;              /* Ensure the navigation bar is a flexbox */
+  justify-content: flex-end;  /* Aligns the tabs to the right */
+  font-weight: 700;
+}
+
+.nav.nav-underline > li > a {
+  color: white;               /* Text color */
+  font-size: 20px;            /* Font size of the text */
+  padding: 15px 20px;         /* Padding around the text */
+  font-weight: 700;
+}
+
+.nav.nav-underline .dropdown-item {
+  font-weight: 700;
+}
+
+.nav.nav-underline .nav-link.active {
+  font-weight: 800;  /* Adjust the weight as needed */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* Custom CSS to create a gradient background class */
+.my-gradient-background {
+  background: linear-gradient(to bottom, #f3f6f8, #c1c3c4) !important; /* Gradient background */
+}
+.my-gradient-background-white-start {
+  background: linear-gradient(to bottom, white, #c1c3c4) !important; /* Gradient background */
+}
+
+
+
+/* USED FOR TOP LEFT PICTURE*/
+.top-image {
+    position: absolute;
+    top: 8px;  
+    left: 10px; 
+    z-index: 1000; /* Ensures the image is on top of the navigation bar */
+    cursor: pointer;
+}
+
+/* USED FOR TOP LEFT PICTURE*/
+.container {
+  position: absolute; /* Container relative positioning */
+}
+
+/* USED FOR TOP LEFT PICTURE*/
+.header-right {
+        position: absolute;
+        top: 20px; /* Aligns with the top of the image */
+        left: calc(35px + 250px); /* Adjusts position to the right of the image; adjust '100px' based on image width */
+        z-index: 1000; /* Ensures the header is on top of the navigation bar */
+        color: white !important; /* Sets the text color to white */
+      }
+
+
+/* BIG TEXT 1*/
+.big-text1 {
+  font-size: 4em; /* Makes the text larger than the default h1 size */
+  font-weight: bold;
+}
+/* BIG TEXT 2*/
+.big-text2 {
+  font-size: 5em; /* Makes the text larger than the default h1 size */
+  font-weight: bold;
+}
+/* BIG TEXT 3*/
+.big-text3 {
+  font-size: 6em; /* Makes the text larger than the default h1 size */
+  font-weight: bold;
+}
+
+.fluidPage {
+  margin: 0;
+  padding: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */    
+/* Reset container padding */
+.container-fluid {
+  padding: 0;
+}
+
+
+.gradient-bg-estimation {
+  background: linear-gradient(to bottom, #eef2f5, #6b7073);
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+  min-height: 750px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* button in table*/
+.reactable-button {
+  background-color: #F2F2F2;
+  color: #404040;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #404040; 
+  align-items: center;
+  font-weight: 700;
+}
+
+.reactable-button:hover {
+  background-color: #4CAF50; /* Darker blue on hover */
+  color: white;
+}
+
+
+.odds-button-same {
+  background-color: white;
+  border: 2px solid gray;
+  color: gray;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+.odds-button-same:hover {
+  background-color: #gray;
+  color: white;
+}
+
+.odds-button-better {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+.odds-button-better:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.odds-button-worse {
+  background-color: white;
+  border: 2px solid #e22020;
+  color: #e22020;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+.odds-button-worse:hover {
+  background-color: #e22020;
+  color: white;
+}
+
+
+.odds-button-place-bet {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+.odds-button-place-bet:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* column in estimation module  */
+.rounded-column {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* custom styles for slider */
+.irs--shiny .irs-bar {
+    top: 25px;
+    height: 8px;
+    border-top: 1px solid #14499F;
+    border-bottom: 1px solid #14499F;
+    background: #14499F;
+    cursor: s-resize;
+    z-index: 2;
+}
+.irs--shiny .irs-from, .irs--shiny .irs-to, .irs--shiny .irs-single {
+    color: #fff;
+    text-shadow: none;
+    padding: 1px 3px;
+    background-color: #14499F;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 1.333;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* shiny-js hide / show */
+.shinyjs-hide {
+  display: none !important; /* Ensure that hidden elements stay hidden */
+}
+
+.shinyjs-show {
+  display: block !important; /* Ensure that shown elements are displayed */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* Target any element with an ID that ends with 'compare_btn' */
+[id$='compare_btn'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 60px; /* Adjust as needed */
+  width: 60px;  /* Adjust as needed */
+  border-radius: 8px; /* Optional for rounded corners */
+  background-color: #f8f9fa; /* Optional background color */
+  border: 1px solid #dee2e6; /* Optional border color */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+[id$='compare_btn'] i {
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* home 3 bottom tabs */
+.methodology-box {
+      background-image: url('methodology.jpg'); /* Use the image file name here */
+      background-size: cover;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      color: white;
+      height: 95%; /* Set height to 95% of the parent container */
+    }
+    .methodology-box h2 {
+      font-weight: bold;
+    }
+    
+.data-box {
+      background-image: url('data.jpg'); /* Use the image file name here */
+      background-size: cover;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      color: white;
+      height: 95%; /* Set height to 95% of the parent container */
+    }
+    .methodology-box h2 {
+      font-weight: bold;
+    }
+    
+.authors-box {
+      background-image: url('authors.jpg'); /* Use the image file name here */
+      background-size: cover;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      color: white;
+      height: 95%; /* Set height to 95% of the parent container */
+    }
+    .authors-box h2 {
+      font-weight: bold;
+    }
+    
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */   
+ /* Home page ,main picture  */   
+    
+ .hero-section {
+        position: relative;
+        background-image: url('home_flat2.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 600px; 
+        color: white;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4); 
+        z-index: 2;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 3;
+        padding: 20px;
+        text-align: center; 
+      }
+    
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* navbar (not sure if using) */
+
+/*
+
+.navbar-custom {
+  background-color: #333; 
+  color: white;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: white; 
+}
+.navbar-custom .navbar-nav > .active > a {
+  border-bottom: 2px solid white; 
+  
+}
+.btn-light:hover {
+background-color: #4CAF50; 
+}
+
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* coloring input boxes */
+
+.grouph2h input[type='checkbox']:checked {
+        background-color: #e22020; /* Background color for the checked checkbox */
+        border: 2px solid #e22020; /* Border color for better visibility */
+      }
+      
+.groupbasic input[type='checkbox']:checked {
+        background-color: #454545; /* Background color for the checked checkbox */
+        border: 2px solid #454545; /* Border color for better visibility */
+    }
+    
+.groupha input[type='checkbox']:checked {
+        background-color: #4CAF50; /* Background color for the checked checkbox */
+        border: 2px solid #4CAF50; /* Border color for better visibility */
+    }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* coloring main boxes for stats */
+
+.ha-gradient {
+  background: linear-gradient(to bottom, 
+                     #9dd89f ,
+                     #A5CDB6 , 
+                     #A8C8C2 , 
+                     #ACC2CD, #ACC2CD, #ACC2CD, #ACC2CD, #ACC2CD, 
+                     #A8C8C2 , 
+                     #A5CDB6 , 
+                     #9dd89f
+                     );
+  padding-top: 0px;  
+}
+
+.h2h-gradient {
+  background: linear-gradient(to bottom, 
+                     #FFB3B3 ,
+                     #D6BBC0 , 
+                     #C1BEC7 , 
+                     #ACC2CD, #ACC2CD, #ACC2CD, #ACC2CD, #ACC2CD, 
+                     #C1BEC7 , 
+                     #D6BBC0 , 
+                     #FFB3B3
+                     );
+  padding-top: 0px;  
+}
+
+.basic-gradient {
+  background: linear-gradient(to bottom, 
+                     #93A3AB ,
+                     #A0B3BC , 
+                     #A6BAC5 , 
+                     #ACC2CD, #ACC2CD, #ACC2CD, #ACC2CD, #ACC2CD, 
+                     #A6BAC5 , 
+                     #A0B3BC , 
+                     #93A3AB
+                     );
+  padding-top: 0px;  
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* fixing reactable table */
+
+
+/* Apply background color and styles to all header cells */
+
+/*
+.selection_table .custom_table_10_matches .rt-th {
+  background-color: #98AFD3 !important;
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  border: 2px solid #98AFD3 !important; 
+  padding: 10px !important;
+}
+
+*/
+
+/* Apply border radius only to the first and last header cells */
+.custom_table_10_matches .rt-th:first-child,
+.selection_table .rt-th:first-child{
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+.custom_table_10_matches .rt-th:last-child,
+.selection_table .rt-th:last-child{
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+/* Apply custom padding with higher specificity to all rows but not the header */
+.custom_table_10_matches .rt-tbody .rt-td .rt-td-inner {
+  padding: 4px 6px !important;  /* Adjust these values as needed */
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+/* Optional: Remove padding from the parent .rt-td elements */
+.custom_table_10_matches .rt-td {
+  padding: 0 !important;
+}
+
+/* Custom padding for header cells in reactable */
+.custom_table_10_matches .rt-thead .rt-th .rt-th-inner, 
+.selection_table .rt-thead .rt-th .rt-th-inner {
+  padding: 12px 4px !important;  /* Adjust these values as needed */
+  font-weight: bold;             /* Optional: make header text bold */
+  text-align: center;            /* Optional: center-align header text */
+}
+
+/* Make the overall reactable table container transparent */
+.custom_table_10_matches .rt-table,
+.selection_table .rt-table {
+  background-color: transparent !important;
+}
+/* Make the table body rows and cells transparent */
+.custom_table_10_matches .rt-tbody .rt-tr-group, 
+.selection_table .rt-tbody .rt-tr-group, 
+.reactable .rt-td {
+  background-color: transparent !important;
+}
+
+/* add borders */
+
+/* Outer border with rounded corners for the table */
+.custom_table_10_matches .rt-table,
+.selection_table .rt-table {
+  border: 1px solid black !important;
+  border-radius: 8px !important; /* Adjust the radius for more or less rounding */
+  overflow: hidden; /* Ensures rounded corners are clean */
+}
+
+/* Horizontal and vertical borders between cells in the body */
+.custom_table_10_matches .rt-tbody .rt-tr-group,
+.selection_table .rt-tbody .rt-tr-group {
+  border-top: 1px solid #14499F !important; /* Horizontal border between rows */
+}
+
+/* Remove the right border on the last cell in each row to avoid double borders */
+.custom_table_10_matches .rt-tr-group .rt-td:last-child,
+.selection_table .rt-tr-group .rt-td:last-child {
+  border-right: none !important;
+}
+
+/* Keep the header background color and remove header cell borders */
+.custom_table_10_matches .rt-th, 
+.selection_table .rt-th {
+  background-color: #14499F !important;
+  color: white !important;
+  font-weight: bold !important;
+  border: none !important;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */ 
+/* Style the card for match data */ 
+
+/* Adjust the size of the card when in full-screen mode */
+.bslib-card[data-full-screen='true'] {
+  width: 80% !important;      /* Set the desired width */
+  height: 90% !important;      /* Set the desired height */
+  max-width: 80% !important;   /* Ensure max-width is restricted */
+  max-height: 90% !important;  /* Ensure max-height is restricted */
+  margin: auto !important;     /* Center the card */
+}
+
+.bslib-full-screen-exit {
+  position: relative;
+  top: 4.5%;           /* Adjust this to control vertical positioning */
+  right: 0;            /* Aligns it to the right edge of its container */
+  margin-right: 10%;   /* Adjust this to control horizontal positioning */
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgba(var(--bs-body-bg-rgb), 0.8);
+}
+          
+          
+/* Style the background color of the tab headers */
+.nav-tabs {
+  background-color: #14499F;  /* Blue background color */
+  height: 55px;
+}
+
+/* Non-selected tab text color (white) */
+.nav-tabs .nav-link {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+/* Selected tab text color (black) */
+.nav-tabs .nav-link.active {
+  color: black;
+  background-color: #ffffff;  /* Optional: white background for selected tab */
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 0px;
+}
+
+nav-tabs .nav-link:hover {
+background-color: white; /* Hover background color */
+color: black;              /* Hover text color */
+border-color: white;     /* Hover border color */
+border-width: 3px;
+border-radius: 0px;
+}
+
+
+/*  spnnier over the page */
+
+.full-page-spinner {
+ /* display: none; Hidden by default */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white overlay */
+  z-index: 9999; Ensures it stays on top 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner styling */
+.full-page-spinner img {
+  width: 100px; /* Adjust the size as needed */
+  animation: spin 1s linear infinite;
+}
+
+
+/* Clickable element border */
+
+.clickable-border {
+  position: relative; /* To handle the border animation properly */
+  cursor: pointer; /* Makes it clear that the element is clickable */
+  border: 1px solid transparent; /* Default border */
+  animation: pulse-border 2s infinite; /* Apply the animation */
+  border-radius: 8px; /* Optional: round the corners */
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.5); /* Initial glow */
+  }
+  50% {
+    box-shadow: 0 0 2px 1px rgba(0, 123, 255, 0.75); /* Stronger glow */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.5); /* Back to initial glow */
+  }
+}
+
+
+/* Notification bar */
+.notification-bar {
+  position: relative; /* Default relative positioning */
+  width: 100%;
+  background-color: #ffcc00; /* Yellow background */
+  color: #000; /* Black text */
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  z-index: 1; /* Ensure it stays on top of the content but below the navbar */
+  border-bottom: 2px solid #ccc; /* Optional border for separation */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+}
+
+/* Link styling */
+.notification-link {
+  color: #0056b3; /* Blue link color */
+  text-decoration: underline;
+}
+.notification-link:hover {
+  color: #003d99; /* Darker blue on hover */
+}
