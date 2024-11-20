@@ -409,7 +409,7 @@ estimation_page_stats_numeric_Server <- function(id, r6,
       
     })
     
-    observeEvent(list(watch("divergent_click"), watch("divergent_click")), ignoreInit = T, {
+    observeEvent(list(watch("divergent_click"), watch("compare_btn_click")), ignoreInit = T, {
       
       shinyjs::removeClass(id = "ggplot_divergent_div", class = "clickable-border")
       

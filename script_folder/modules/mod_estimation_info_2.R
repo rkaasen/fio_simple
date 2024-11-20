@@ -9,6 +9,7 @@ estimation_page_info_UI <- function(id) {
   
   fluidPage(
     
+    
     # hidden(
     #   div(class = "full-page-spinner", tags$img(src = "spinner.gif"))
     # ),
@@ -24,10 +25,11 @@ estimation_page_info_UI <- function(id) {
         
         fluidPage(
           
-          page_sidebar(
-            sidebar = sidebar(
-              width = 400,
-              class = "my-gradient-background",
+          sidebarLayout(
+            sidebarPanel(
+              # width = 400,
+              width = 2,
+              # class = "my-gradient-background",
               
               fluidRow(
                 style = "display: flex; align-items: center;",
@@ -88,6 +90,8 @@ estimation_page_info_UI <- function(id) {
               )
               
             ),
+            
+            mainPanel(
             
             fluidRow(
               column(10, offset = 1,
@@ -159,7 +163,7 @@ estimation_page_info_UI <- function(id) {
                                              header = "GOALS CONCEDED HA")
             
             
-            
+            ) 
           )
         ) # MAIN PAGE
     )  # SIDEBAR PAGE

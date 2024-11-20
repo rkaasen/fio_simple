@@ -52,14 +52,14 @@ card_for_match_details_UI <- function(id) {
                                            column(2, offset = 2, align = "middle", h4(textOutput(NS(id,"fair_away")), style = "color: white;")),
                                          )),
                                   column(2, offset = 0, align = "right", div(style = "height: 12px;"),
-                                         h5("Not live yet: ", style = "color: white;"),
+                                         h5("Upcomming feature: ", style = "color: white;"),
                                          
                                   ),
                                   column(1, offset = 0, align = "left",div(style = "height: 3px;"),
                                          
-                                         # disabled(
+                                         disabled(
                                          actionButton(NS(id,"bet_btn"), " BET " ,class = "reactable-button", width = "75%", style = "padding-top: 8px;" )
-                                         # )
+                                         )
                                   )
                                   
                                   

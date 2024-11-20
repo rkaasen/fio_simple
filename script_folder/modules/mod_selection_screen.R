@@ -10,7 +10,6 @@ team_select_UI <- function(id) {
   fluidPage(
     
     
-    
     div(class = "gradient-bg-estimation",
         br(),
         
@@ -156,37 +155,37 @@ team_select_Server <- function(id, r6) {
         )
       )
       
-      df_odds_open <- f_match_open_for_betting() %>% 
-        mutate(Bets = ifelse(bet_open, "Open", "Not Open")) %>% 
-        select(match_id, Bets)
-      
-      
-      df_use <- df_use %>%
-        
-        mutate(
-          season_ending = f_calc_season_ending(utc_date),
-          match_id = paste0(HomeTeam, "-", AwayTeam , "-", season_ending),
-        ) %>% 
-        left_join(df_odds_open) %>% 
-        
-        mutate(
-          col_def = case_when(
-            Bets == "Open" ~ "#4CAF50",
-            Bets == "Not Open" ~ "#e22020",
-            T ~ "#4CAF50"
-          )
-        ) %>% 
-        select(-match_id, -season_ending)
-      
-      
-      columns_list$Bets <- colDef( minWidth = 110 , style = list(fontSize = "12px") , vAlign = "center",
-                                   cell = pill_buttons( data = df_use,
-                                                        color_ref  = "col_def",
-                                                        text_color = "white"  # White text color for contrast
-                                   )
-      )
-      
-      columns_list$col_def <-  colDef(show = F)
+      # df_odds_open <- f_match_open_for_betting() %>% 
+      #   mutate(Bets = ifelse(bet_open, "Open", "Not Open")) %>% 
+      #   select(match_id, Bets)
+      # 
+      # 
+      # df_use <- df_use %>%
+      #   
+      #   mutate(
+      #     season_ending = f_calc_season_ending(utc_date),
+      #     match_id = paste0(HomeTeam, "-", AwayTeam , "-", season_ending),
+      #   ) %>% 
+      #   left_join(df_odds_open) %>% 
+      #   
+      #   mutate(
+      #     col_def = case_when(
+      #       Bets == "Open" ~ "#4CAF50",
+      #       Bets == "Not Open" ~ "#e22020",
+      #       T ~ "#4CAF50"
+      #     )
+      #   ) %>% 
+      #   select(-match_id, -season_ending)
+      # 
+      # 
+      # columns_list$Bets <- colDef( minWidth = 110 , style = list(fontSize = "12px") , vAlign = "center",
+      #                              cell = pill_buttons( data = df_use,
+      #                                                   color_ref  = "col_def",
+      #                                                   text_color = "white"  # White text color for contrast
+      #                              )
+      # )
+      # 
+      # columns_list$col_def <-  colDef(show = F)
       
       
       
